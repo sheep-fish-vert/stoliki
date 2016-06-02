@@ -96,9 +96,14 @@ input, textarea{
 }
 
 @include font-face("GothamPro", "GothaProLight", 300);
-@include font-face("GothamPro", "GothaProRegular", 400);
+@include font-face("GothamPro", "GothaProRegular");
 @include font-face("GothamPro", "GothaProMedium", 500);
 @include font-face("GothamPro", "GothaProBold", 700);
+
+@include font-face("Room", "Room-Light", 300);
+@include font-face("Room", "Room");
+@include font-face("Room", "Room-Medium", 500);
+@include font-face("Room", "Room-Bold", 700);
 
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 
