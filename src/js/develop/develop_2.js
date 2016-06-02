@@ -1,8 +1,9 @@
-var map ;
 
-function googleMap(mapWrap){
+var map;
+
+function googleMap(mapWrap) {
     function initialize() {
-        var myLatlng = new google.maps.LatLng(cordX,cordY);
+        var myLatlng = new google.maps.LatLng(cordX, cordY);
         var myOptions = {
             zoom: 16,
             scaleControl: false,
@@ -11,12 +12,12 @@ function googleMap(mapWrap){
             disableDefaultUI: true, //без управляющих елементов
             mapTypeId: google.maps.MapTypeId.ROADMAP, // SATELLITE - снимки со спутника,
             zoomControlOptions: {
-               position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
+                position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
             }
         }
         map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
 
-        var contentString = '<div class="marker-test">'+googleText+'</div>';
+        var contentString = '<div class="marker-test">' + googleText + '</div>';
         var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
@@ -46,17 +47,17 @@ function googleMap(mapWrap){
         /*анимация при клике на маркер*/
         marker.addListener('click', toggleBounce);
         function toggleBounce() {
-          if (marker.getAnimation() !== null) {
-            marker.setAnimation(null);
-          } else {
-            marker.setAnimation(google.maps.Animation.BOUNCE);
-          }
+            if (marker.getAnimation() !== null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
         }
         /*/анимация при клике на маркер*/
 
         /*По клику открываеться инфоблок*/
-        google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map,marker);
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
         });
 
     }
@@ -64,34 +65,36 @@ function googleMap(mapWrap){
 }
 
 
-$(document).ready(function(){
-    
+
+
+$(document).ready(function () {
+
     /* map */
-        googleMap('map');        
-        
-        if ($(window).width() < 768) {
-            map.set('draggable', false);
-        }
-        else {
-            map.set('draggable', true);
-        };
-        
+    googleMap('map');
+
+    if ($(window).width() < 768) {
+        map.set('draggable', false);
+    }
+    else {
+        map.set('draggable', true);
+    };
+
     /* map */
 });
 
-$(window).load(function(){
+$(window).load(function () {
 
 });
 
-$(window).resize(function(){
-    
+$(window).resize(function () {
+
     /* map */
-        if ($(window).width() < 768) {
-            map.set('draggable', false);
-        }
-        else {
-            map.set('draggable', true);
-        };
+    if ($(window).width() < 768) {
+        map.set('draggable', false);
+    }
+    else {
+        map.set('draggable', true);
+    };
     /* map */
-        
+
 });
