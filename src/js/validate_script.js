@@ -193,7 +193,7 @@ function popNext(popupId, popupWrap){
 /*маска на инпуте*/
 function Maskedinput(){
     if($('.tel-mask')){
-        $('.tel-mask').mask('+9 (999) 999-99-99 ');
+        $('.tel-mask').mask('+999 99 999 99 99');
     }
 }
 
@@ -266,10 +266,12 @@ function someAjax(item, someUrl, successFunc, someData){
 $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
-   
+
    validate('.contact-form-contacte', {submitFunction:validationCall});
    validate('.contact-form-in-b', {submitFunction:validationCall});
-   
+
+   validate('.top-block-form-main', {submitFunction:validationCall});
+
    Maskedinput();
    fancyboxForm();
 

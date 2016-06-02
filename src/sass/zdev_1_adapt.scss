@@ -36,6 +36,20 @@
 
     /* /header */
 
+    /* top-block */
+
+        .top-block{
+
+            .title{font-size: 52px;}
+            .top-block-descript{font-size: 36px;margin-bottom: 16px;
+                span{font-size: 45px;}
+            }
+            .top-block-info{font-size: 41px;}
+
+        }
+
+    /* /top-block */
+
 }
 @media screen and (max-width: 1024px){
 
@@ -45,6 +59,22 @@
         .hide-tablet-horizontal{display: none;}
 
     /* /adaptive-classes */
+
+    /* top-block */
+
+        .top-block{
+
+            .top-block-main{
+                .top-block-params{position: static;padding:20px 0;
+                    .top-block-params-main{display: flex;justify-content: space-around;align-items: flex-start;
+                        p{margin: 0 5px;}
+                    }
+                }
+            }
+
+        }
+
+    /* /top-block */
 
 }
 @media screen and (max-width: 992px){
@@ -67,6 +97,16 @@
         }
 
     /* /header */
+
+    /* top-block-form */
+
+        .top-block-form{
+            .title{font-size: 54px;}
+            .top-block-form-telefone{font-size: 38px;}
+            .top-block-form-descript{font-size: 22px;}
+        }
+
+    /* /top-block-form */
 
 }
 @media screen and (max-width: 767px){
@@ -100,8 +140,74 @@
 
     /* /header */
 
+    /* top-block */
+
+        .top-block{
+
+            .title{font-size: 36px;}
+            .top-block-descript{font-size: 24px;
+                span{font-size:30px;}
+            }
+            .top-block-info{font-size: 30px;}
+
+            .top-block-main{
+                .top-block-params{font-size: 16px;
+                    .top-block-params-title{font-size: 18px;}
+                    .top-block-params-main{flex-wrap:wrap;
+                        p{margin: 0 5px 10px 5px;}
+                    }
+                    .top-block-params-footer{font-size: 12px;}
+                }
+                .top-block-img{margin-top: -60px;margin-bottom: -70px;}
+            }
+
+        }
+
+    /* /top-block */
+
+    /* top-block-form */
+
+        .top-block-form{
+            .title{font-size: 38px;}
+            .top-block-form-telefone{font-size: 30px;}
+            .top-block-form-descript{font-size: 18px;}
+        }
+
+    /* /top-block-form */
+
 }
 @media screen and (max-width: 666px){
+
+    /* header */
+
+        .header{
+            .header-nav{
+                .header-nav-main ul{display: block;text-align: center;
+                    li{margin-bottom: 10px;
+                        a{margin-right: 0;padding-left:0;line-height: 1.25;
+                            &:before{height: 2px;width: 20px;top:100%;left: calc(50% - 10px);}
+                        }
+                        &:last-child{margin-bottom: 0;}
+                    }
+                }
+            }
+        }
+
+    /* /header */
+
+    /* top-block-form */
+
+        .top-block-form{
+            .top-block-form-main{display: block;
+                .form-row{width: 100%;margin:0 0 20px 0;
+                    &.submit-row{
+                        .button-transparent{max-width: none;}
+                    }
+                }
+            }
+        }
+
+    /* /top-block-form */
 
 }
 @media screen and (max-width: 479px){
@@ -124,16 +230,6 @@
 
             .header-nav{
                 .sendwich{position: absolute;right:15px;top:25px;}
-
-                .header-nav-main ul{display: block;text-align: center;
-                    li{margin-bottom: 10px;
-                        a{margin-right: 0;padding-left:0;line-height: 1.25;
-                            &:before{height: 2px;width: 20px;top:100%;left: calc(50% - 10px);}
-                        }
-                        &:last-child{margin-bottom: 0;}
-                    }
-                }
-
             }
 
             .header-telefones{padding-top: 10px;
@@ -147,6 +243,16 @@
         }
 
     /* /header */
+
+    /* top-block */
+
+        .top-block{padding-top: 190px;
+            .top-block-main{
+                .top-block-img{margin-bottom: -20px;margin-top: -20px;}
+            }
+        }
+
+    /* /top-block */
 
 }
 @media screen and (max-width: 320px){
