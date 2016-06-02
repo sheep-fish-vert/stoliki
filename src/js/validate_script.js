@@ -266,10 +266,12 @@ function someAjax(item, someUrl, successFunc, someData){
 $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
-   
+
    validate('.contact-form-contacte', {submitFunction:validationCall});
    validate('.contact-form-in-b', {submitFunction:validationCall});
-   
+
+   validate('.top-block-form-main', {submitFunction:validationCall});
+
    Maskedinput();
    fancyboxForm();
 
