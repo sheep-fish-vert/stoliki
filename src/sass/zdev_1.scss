@@ -1,0 +1,54 @@
+/* button */
+
+    .button{display: inline-block;text-decoration: none;font-family: 'Room', sans-serif;font-weight: 700;text-transform: uppercase;max-width: 285px;width: 100%;height: 40px;line-height: 40px;color:#fff;position: relative;background-color: #c6181a;font-size: 16px;position: relative;text-align: center;
+        &:after{content: '';display: block;position: absolute;top:0;left:0;right:0;height: 0;z-index:0;background-color:#f62224;transition:height 300ms ease;}
+        span{position: relative;z-index: 1;line-height: 1;}
+        &:hover{
+            &:after{height:100%;}
+        }
+    }
+
+/* /button */
+
+/* adaptive-classes */
+
+    .show-mobile, .show-tablet{display: none;}
+
+/* /adaptive-classes */
+
+/* header */
+
+    .header{padding: 7px 0 5px 0;position: fixed;background-color: #fff;width: 100%;border-bottom: 1px solid rgba(204, 204, 204, .2);
+        &:after{content: '';display: block;position: absolute;width: 100%;height: 76px;top:100%;left:0;background-image:url(../images/header-shadow.png);pointer-events:none;background-repeat: no-repeat;background-position: center top;}
+
+        .header-wrap{display: flex;justify-content: space-between;align-items: center;}
+
+        .header-backcall-wrap{text-align: center;}
+
+        .header-nav-main{padding-top: 10px;
+            ul{list-style:none;padding:0;margin: 0;display: flex;justify-content: flex-start;align-items: center;
+                li{
+                    a{display: inline-block;position: relative;text-decoration: none;color:#000;font-size: 16px;font-family: 'Room', sans-serif;font-weight: 300;padding-left:7px;margin-right: 26px;transition:color 300ms ease;
+                        &:before{content: '';display: block;position:absolute;left: 0;top:0;width: 3px;height: 100%;background-color: #b71a1c;}
+                        &:hover, &.active{color:#b71a1c;}
+                    }
+                    &:last-child{
+                        a{margin-right: 0;}
+                    }
+                }
+            }
+        }
+
+        .header-telefones{
+            .header-telefones-wrap{text-align: right;
+                p{margin: 0 0 5px 0;
+                    a{text-decoration: none;color:#000;font-size: 28px;transition:color 300ms ease;
+                        &:hover{color:#b71a1c;}
+                    }
+                }
+            }
+        }
+
+    }
+
+/* /header */
