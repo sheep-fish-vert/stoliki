@@ -33,7 +33,8 @@
 
 }
 @media screen and (max-width: 992px){
-
+    .pop-succ form .contact-form-row-submit button span {font-size: 20px;}
+    .op-succ form .contact-form-title h5 { font-size: 24px; }
 }
 @media screen and (max-width: 767px){
     /* contacts */ 
@@ -44,8 +45,11 @@
             .form-block {width: 100%;}
         }
     /* contacts */ 
+
+    
 }
 @media screen and (max-width: 666px){
+    .pop-succ .xlose-btn { top: 5px; right: 5px;}
 
 }
 @media screen and (max-width: 479px){

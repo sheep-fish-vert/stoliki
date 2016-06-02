@@ -87,6 +87,9 @@ $(document).ready(function () {
         $('.xlose-btn').click(function(){
             $(this).closest('.md-modal').removeClass('md-show');
         });
+    
+    /* close fancy */
+    
 });
 
 $(window).load(function () {

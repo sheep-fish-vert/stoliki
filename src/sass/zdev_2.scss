@@ -825,6 +825,12 @@
                     &:-moz-placeholder{color:#fff;opacity:1;}
                     &::-moz-placeholder{color:#fff;opacity:1;}
                     &:-ms-input-placeholder{color:#fff;}
+                    &.error{background-color: white; 
+                        &::-webkit-input-placeholder{color:red;}
+                        &:-moz-placeholder{color:red;opacity:1;}
+                        &::-moz-placeholder{color:red;opacity:1;}
+                        &:-ms-input-placeholder{color:red;}
+                    }
                 }
             }
         }
@@ -834,7 +840,10 @@
                 &:before{left: 50%; right: 50%; top: 0; bottom: 0; background-color: white;}
                 &:hover{ 
                     span{color: #b71a1c;}
-                    &:before{left: 10%; right: 10%; top: 0; bottom: 0;}
+                    &:before{left: 8%; right: 8%; top: 0; bottom: 0;}
+                }
+                &:active{
+                    &:before{left: 0%; right: 0%; top: 0; bottom: 0;}
                 }
             }
         }
