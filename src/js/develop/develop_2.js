@@ -70,16 +70,23 @@ function googleMap(mapWrap) {
 $(document).ready(function () {
 
     /* map */
-    googleMap('map');
+        googleMap('map');
 
-    if ($(window).width() < 768) {
-        map.set('draggable', false);
-    }
-    else {
-        map.set('draggable', true);
-    };
+        if ($(window).width() < 768) {
+            map.set('draggable', false);
+        }
+        else {
+            map.set('draggable', true);
+        };
 
     /* map */
+    
+    
+    /* close fancy */
+    
+        $('.xlose-btn').click(function(){
+            $(this).closest('.md-modal').removeClass('md-show');
+        });
 });
 
 $(window).load(function () {
