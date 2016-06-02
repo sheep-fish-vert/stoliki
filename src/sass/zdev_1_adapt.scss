@@ -175,6 +175,20 @@
 
     /* /top-block-form */
 
+    /* success-modal */
+
+        .md-modal{
+            &.success-modal{max-width: 460px;
+
+                h3{font-size: 42px;}
+                p{font-size: 32px;}
+
+                .close-button{left: auto;top:auto;right: 0;bottom:calc(100% + 5px);}
+            }
+        }
+
+    /* /success-modal */
+
 }
 @media screen and (max-width: 666px){
 
@@ -253,6 +267,22 @@
         }
 
     /* /top-block */
+
+    /* success-modal */
+
+        .md-modal{
+            &.success-modal{max-width: 310px;
+
+                .md-content{height: 205px;}
+
+                h3{font-size: 28px;}
+                p{font-size: 20px;}
+
+                .close-button{left: auto;top:auto;right: 0;bottom:calc(100% + 5px);}
+            }
+        }
+
+    /* /success-modal */
 
 }
 @media screen and (max-width: 320px){

@@ -101,13 +101,24 @@ function validationCall(form){
   var formSur = thisForm.serialize();
 
     $.ajax({
-        url : thisForm.attr('action'),
+        url : ajaxurl,
         data: formSur,
         method:'POST',
         success : function(data){
             if ( data.trim() == 'true') {
                 thisForm.trigger("reset");
-                popNext("#call_success", "call-popup");
+                //popNext("#call_success", "call-popup");
+
+                /* only for this site (i hope) */
+
+                    $('.success-modal').addClass('md-show');
+
+                    specTimer = setTimeout(function(){
+                        $('.md-show').removeClass('md-show');
+                    }, 4000);
+
+                /* /only for this site (i hope) */
+
             }
             else {
                thisForm.trigger('reset');
@@ -115,6 +126,17 @@ function validationCall(form){
 
         }
     });
+
+    /* only for this site (i hope) */
+
+        var specTimer = null;
+
+        $('.close-button').click(function(){
+            clearTimeout(specTimer);
+            $('.md-show').removeClass('md-show');
+        });
+
+    /* /only for this site (i hope) */
 }
 
 /* Отправка формы с файлом */

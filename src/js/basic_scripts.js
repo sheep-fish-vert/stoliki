@@ -171,7 +171,7 @@ $(document).ready(function() {
     headeButer($('.sendwich-wrap'), $('.header-menu'));
 
     goTo();
-    //animationBlock($('.setion-animate'));
+    animationBlock($('.section-animate'));
 });
 
 $(window).resize(function() {
