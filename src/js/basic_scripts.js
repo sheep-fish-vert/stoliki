@@ -124,17 +124,17 @@ function bindExample(){
 }
 
 /*header buter*/
-function headeButer(menuMobile,toggleMenu){
+function headeButer(menuMobile, toggleMenu){
     if(menuMobile){
         menuMobile.click(function(event) {
-            if($(window).width()<1024-$.scrollbarWidth()){
+            if($(window).width()<992-$.scrollbarWidth()){
                 $(this).toggleClass('active');
                 toggleMenu.stop().slideToggle();
             }
         });
 
         $(document).on('click touchstart',function (event){
-            if($(window).width()<1024-$.scrollbarWidth()){
+            if($(window).width()<992-$.scrollbarWidth()){
                 var div = toggleMenu;
                 if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
                     {
@@ -144,6 +144,13 @@ function headeButer(menuMobile,toggleMenu){
             }
         });
     }
+
+    $(window).resize(function(){
+        if($(window).width()>=992-$.scrollbarWidth()){
+            toggleMenu.removeAttr('style');
+            menuMobile.removeClass('active');
+        }
+    });
 }
 
 /* expresion for numbers with spaces */
@@ -161,7 +168,9 @@ $(document).ready(function() {
     //oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
-    //goTo();
+    headeButer($('.sendwich-wrap'), $('.header-menu'));
+
+    goTo();
     //animationBlock($('.setion-animate'));
 });
 
