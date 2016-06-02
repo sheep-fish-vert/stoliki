@@ -26,27 +26,28 @@
 
 /* form */
 
-.how-get-stol{ width: 100%; background-color: red; padding-bottom: 160px;
-    .title-text{padding-bottom: 78px; padding-top: 30px;}
-    .convert-rov{width: 100%; display: flex; align-items: stretch; justify-content: space-between; flex-wrap: nowrap;
-        .item{width: 305px; position: relative; background-color: rgba(255, 255, 255, 0.8);  border-radius: 5px; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); padding: 28px 25px 33px;
-            .counter{text-align: center; font-size: 43px;  font-family: "GothamPro", sans-serif; color: rgb(0, 0, 0); font-weight: bold; } 
-            .titl{text-align: center; font-size: 18px; font-family: "GothamPro", sans-serif;   color: rgb(0, 0, 0); line-height: 1.136; font-weight: 300;
-                b{font-weight: 500; font-size: 22px;}
-                p{padding-bottom: 20px; margin: 0;}
-            }
-            .after-block{ padding-top: 20px; text-align: center;
-                .call-me-maybe{display: inline-block; font-size: 25px; font-family: "GothamPro", sans-serif; color: rgb(0, 0, 0); line-height: 1; margin-bottom: 30px; text-decoration: none; position: relative;
-                    &:before{content: ''; position: absolute; bottom: 0;  left: 50%; right: 50%; height: 1px; background-color: black; transition: all 0.3s;}
-                    &:hover{
-                        &:before{left: 0; right: 0;}
+/* how-get-stol */
+    .how-get-stol{ width: 100%; background-color: red; padding-bottom: 160px;
+        .title-text{padding-bottom: 70px; padding-top: 15px;}
+        .convert-rov{width: 100%; display: flex; align-items: stretch; justify-content: space-between; flex-wrap: nowrap;
+            .item{width: 305px; position: relative; background-color: rgba(255, 255, 255, 0.8);  border-radius: 5px; box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); padding: 28px 25px 0px;
+                .counter{text-align: center; font-size: 43px;  font-family: "GothamPro", sans-serif; color: rgb(0, 0, 0); font-weight: bold; } 
+                .titl{text-align: center; font-size: 18px; font-family: "GothamPro", sans-serif;   color: rgb(0, 0, 0); line-height: 1.45; font-weight: 300;
+                    b{font-weight: 500; font-size: 22px;}
+                    p{padding-bottom: 20px; margin: 0;}
+                }
+                .after-block{ padding-top: 20px; text-align: center;
+                    .call-me-maybe{display: inline-block; font-size: 25px; font-family: "GothamPro", sans-serif; color: rgb(0, 0, 0); line-height: 1;text-decoration: none; position: relative; margin-bottom: 10px;   padding-top: 15px;
+                        &:before{content: ''; position: absolute; bottom: 0;  left: 50%; right: 50%; height: 1px; background-color: black; transition: all 0.3s;}
+                        &:hover{
+                            &:before{left: 0; right: 0;}
+                        }
+                        
                     }
-                    
                 }
             }
+            .or-abs{ font-size: 18px; font-family: "GothamPro", sans-serif; color: rgb(0, 0, 0);  line-height: 1.389; text-align: center; display: flex; align-items: center;}
         }
-        .or-abs{ font-size: 18px; font-family: "GothamPro", sans-serif; color: rgb(0, 0, 0);  line-height: 1.389; text-align: center; display: flex; align-items: center;}
     }
-}
-
+/* how-get-stol */
 
