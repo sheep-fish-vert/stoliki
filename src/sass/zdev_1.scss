@@ -163,13 +163,23 @@
 
     .md-modal{
         &.success-modal{max-width: 610px;width:100%;
-            &:before{content:'';display: block;position: absolute;top:-3px;right:-3px;bottom:-3px;left:-3px;border:1px solid #fff;}
-            .md-content{height: 265px;display: flex;flex-direction: column;align-items: center;justify-content: center;background-image:url(../images/white-crocodile-bg.jpg);}
+
+            .md-content{height: 265px;display: flex;flex-direction: column;align-items: center;justify-content: center;background-image:url(../images/white-crocodile-bg.jpg);border-radius: 0;color:#000;
+                &:before{content:'';display: block;position: absolute;top:-3px;right:-3px;bottom:-3px;left:-3px;border:1px solid #fff;}
+            }
+
+            h3{padding: 0;background:transparent;font-size: 62px;margin-bottom: 15px;}
+            p{font-size: 47px;margin: 0;text-align: center;}
 
             .close-button{position: absolute;width: 30px;height: 30px;left: calc(100% + 5px);top:-3px;border:none;background:none;margin:0;padding: 0;
-                &:before, &:after{content:'';width: 32px;height: 2px;background-color: #fff;position: absolute;transform-origin:50% 50%;left:0;top:calc(50% - 1px);}
+                &:before, &:after{content:'';width: 32px;height: 2px;background-color: #fff;position: absolute;transform-origin:50% 50%;left:0;top:calc(50% - 1px);transition:background-color 300ms ease;}
                 &:before{transform:rotate(45deg);}
                 &:after{transform:rotate(-45deg);}
+
+                &:hover{
+                    &:before, &:after{background-color:#ae1517;}
+                }
+
             }
 
         }
