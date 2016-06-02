@@ -13,7 +13,7 @@
 @media screen and (max-width: 1024px){
     
     /* how get stoll */
-        .how-get-stol {padding-bottom: 20px;
+        section.how-get-stol {padding-bottom: 20px;
             .convert-rov { display: block;
                 .item{margin: 0 auto; padding-bottom: 25px;}
                 .or-abs{display: block; text-align: center;}
@@ -39,5 +39,5 @@
 
 }
 @media screen and (max-width: 360px){
-    .how-get-stol .convert-rov .item{width: 100%;}
+    section.how-get-stol .convert-rov .item{width: 100%;}
 }
