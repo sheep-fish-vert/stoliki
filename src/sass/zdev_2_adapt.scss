@@ -11,16 +11,19 @@
 
 }
 @media screen and (max-width: 1024px){
-    .how-get-stol {padding-bottom: 20px;
-        .convert-rov { display: block;
-            .item{margin: 0 auto; padding-bottom: 25px;}
-            .or-abs{display: block; text-align: center;}
-            .or-abs { font-size: 36px; }
+    
+    /* how get stoll */
+        .how-get-stol {padding-bottom: 20px;
+            .convert-rov { display: block;
+                .item{margin: 0 auto; padding-bottom: 25px;}
+                .or-abs{display: block; text-align: center;}
+                .or-abs { font-size: 36px; }
+            }
+            .title-text { padding-bottom: 30px;
+                h2{font-size: 56px;}
+            }
         }
-        .title-text { padding-bottom: 30px;
-            h2{font-size: 56px;}
-        }
-    }
+    /* how get stoll */
 
 }
 @media screen and (max-width: 992px){
