@@ -13,12 +13,12 @@ function googleMap(mapWrap){
             }
         }
         var map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
-
+/*
         var contentString = '<div class="marker-test">'+googleText+'</div>';
         var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
-
+*/
 
         /*маркер на svg*/
         var SQUARE_PIN = 'M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z'
@@ -35,13 +35,15 @@ function googleMap(mapWrap){
             icon: {                               //маркер на svg
                 path: SQUARE_PIN,
                 fillColor: '#fff',
-                fillOpacity: 0.7,
+                fillOpacity: 0,
                 strokeColor: '#FF3232',
-                strokeWeight: 5
+                strokeWeight: 5,
+                opacity: 0
             },
         });
 
         /*анимация при клике на маркер*/
+        /*
         marker.addListener('click', toggleBounce);
         function toggleBounce() {
           if (marker.getAnimation() !== null) {
@@ -50,12 +52,15 @@ function googleMap(mapWrap){
             marker.setAnimation(google.maps.Animation.BOUNCE);
           }
         }
+        */
         /*/анимация при клике на маркер*/
 
         /*По клику открываеться инфоблок*/
+        /*
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.open(map,marker);
         });
+        */
 
     }
     initialize();
