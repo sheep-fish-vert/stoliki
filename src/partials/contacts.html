@@ -1,0 +1,51 @@
+<section class="contacts" id="contacts">
+    <div class="cont-wrap">
+        <div class="mbox">
+            <div class="title-text">
+                <h2>Контакты</h2>
+            </div>
+            <div class="after-con">
+                <div class="map-block">
+                    <div id="map"></div>
+                </div>
+                <div class="form-block">
+                    <form action="ajax.php" name="" class="contact-form-contacte">
+                        <div class="contact-form-title">
+                            <h5>Задать вопрос</h5>
+                        </div>
+                        <div class="contact-form-row cfix">
+                            <div class="contact-form-item">
+                                <div class="contact-form-item-input form_row">
+                                    <div class="form_input">
+                                        <input type="text" name="contact_name" required="required" value="" placeholder="имя">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form-item">
+                                <div class="contact-form-item-input form_row">
+                                    <div class="form_input">
+                                        <input type="text" name="contact_tel" value="" required="required" placeholder="телефон" class="tel-mask">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-form-item">
+                                <div class="contact-form-item-input form_row">
+                                    <div class="form_input">
+                                        <textarea name="contact_mass" value="" required="required" placeholder="вопрос" ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form-row-submit cfix">
+                            <div class="contact-form-item">
+                                <button type="submit" class="contact-submit">
+                                    <span>Отправить</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

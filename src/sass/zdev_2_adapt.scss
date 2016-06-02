@@ -7,7 +7,13 @@
 @media screen and (max-width: 1366px){
 
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1120px){
+   /* contacts */ 
+        section.contacts .after-con { display: block; 
+            .map-block{margin: 0 auto; max-width: 697px; margin-bottom: 20px;}
+            .form-block{margin: 0 auto;}
+        }
+    /* contacts */ 
 
 }
 @media screen and (max-width: 1024px){
@@ -30,13 +36,20 @@
 
 }
 @media screen and (max-width: 767px){
-
+    /* contacts */ 
+        section.contacts .after-con {
+            .map-block{ width: 100%;
+                #map{width: 100%; height: 400px;}
+            }
+            .form-block {width: 100%;}
+        }
+    /* contacts */ 
 }
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
-
+    section.contacts .after-con .form-block .contact-form-title h5 {font-size: 30px;}
 }
 @media screen and (max-width: 360px){
     section.how-get-stol .convert-rov .item{width: 100%;}
