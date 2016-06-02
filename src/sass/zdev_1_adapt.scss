@@ -98,6 +98,16 @@
 
     /* /header */
 
+    /* top-block-form */
+
+        .top-block-form{
+            .title{font-size: 54px;}
+            .top-block-form-telefone{font-size: 38px;}
+            .top-block-form-descript{font-size: 22px;}
+        }
+
+    /* /top-block-form */
+
 }
 @media screen and (max-width: 767px){
 
@@ -155,6 +165,16 @@
 
     /* /top-block */
 
+    /* top-block-form */
+
+        .top-block-form{
+            .title{font-size: 38px;}
+            .top-block-form-telefone{font-size: 30px;}
+            .top-block-form-descript{font-size: 18px;}
+        }
+
+    /* /top-block-form */
+
 }
 @media screen and (max-width: 666px){
 
@@ -174,6 +194,20 @@
         }
 
     /* /header */
+
+    /* top-block-form */
+
+        .top-block-form{
+            .top-block-form-main{display: block;
+                .form-row{width: 100%;margin:0 0 20px 0;
+                    &.submit-row{
+                        .button-transparent{max-width: none;}
+                    }
+                }
+            }
+        }
+
+    /* /top-block-form */
 
 }
 @media screen and (max-width: 479px){

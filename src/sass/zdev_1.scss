@@ -8,6 +8,24 @@
         }
     }
 
+    .button-transparent{color:#fff;border:7px solid #fff;position: relative;background-color:transparent;max-width: 365px;width: 100%;height: 60px;line-height: 10px;text-align: center;font-weight: 700;font-size: 34px;text-transform: uppercase;transition:color 300ms ease;
+
+        &:before{content:'';display: block;position: absolute;z-index:0;top:0;left: 50%;width: 0;height: 100%;transform:translate(-50%, 0);opacity: 0;background-color: #fff;transition:all 300ms ease;}
+        span{position: relative;z-index: 1;}
+        &:hover{color:#b71a1c;
+            &:before{width: 90%;opacity: 1;}
+        }
+        &:active{color:#b71a1c;
+            &:before{width: 101%;opacity: 1;}
+        }
+
+        &.button-red{border-color:#a1080a;color:#000;
+            &:before{background-color:#a1080a;}
+            &:hover{color:#fff;}
+            &:active{color:#fff;}
+        }
+    }
+
 /* /button */
 
 /* adaptive-classes */
@@ -107,3 +125,32 @@
     }
 
 /* /top-section */
+
+/* top-block-form */
+
+    .top-block-form{position: relative;z-index: 1;min-height: 393px;background-image:url(../images/red-background.jpg);background-repeat: repeat-x;background-position: left top;background-color: #b51618;padding-bottom: 155px;
+
+        .top-block-form-wrap{padding:25px 0 0 0;}
+
+        .title{text-align: center;margin: 0 0 20px 0;padding:0;font-size: 74px;font-family: "Room", sans-serif;color:#fff;}
+        .top-block-form-telefone{text-align: center;font-size: 48px;color:#fff;margin-bottom: 15px;}
+        .top-block-form-descript{text-align: center;font-size: 28px;color:#fff;margin-bottom: 20px;}
+
+        .top-block-form-main{display: flex;justify-content: center;max-width: 722px;width: 100%;margin: 0 auto;
+            .form-row{margin: 0 11px;width: 50%;
+                input{width: 100%;height: 60px;line-height: 60px;border:2px solid #fff;background-color:transparent;color:#fff;font-size: 18px;padding:0 15px;position:relative;transition:background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+                    &.error{background-color: #fff;border-color:red;
+                        &::-webkit-input-placeholder{color:red;}
+                        &:-moz-placeholder{color:red;}
+                        &::-moz-placeholder{color:red;}
+                        &:-ms-input-placeholder{color:red;}
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+/* /top-block-form */
