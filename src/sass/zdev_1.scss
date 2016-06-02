@@ -154,3 +154,16 @@
     }
 
 /* /top-block-form */
+
+/* success-modal */
+
+    .md-modal{
+        &.success-modal{max-width: 610px;width:100%;
+            &:before{content:'';display: block;position: absolute;top:-3px;right:-3px;bottom:-3px;left:-3px;border:1px solid #fff;}
+            .md-content{height: 265px;display: flex;flex-direction: column;align-items: center;justify-content: center;background-image:url(../images/white-crocodile-bg.jpg);}
+        }
+
+        &~.md-overlay{background-color: rgba(0, 0, 0, .5);}
+    }
+
+/* /success-modal */
