@@ -850,3 +850,48 @@
     }
 
 /* pop succes */
+
+/* why stol */
+
+    .why-stol{width: 100%; background-image: url(../images/smash-bg.jpg); background-size: cover; padding-top: 170px; background-position: center center;
+        .super-titl{ text-align: center;
+            h2{  font-family: "Room"; color: rgb(255, 255, 255);
+                span{display: block; font-size: 52px;}
+                b{display: inline-block; font-size: 63px; border-top: 5px solid white; border-bottom: 5px solid white; font-weight: 700; }
+            }
+        }
+        .grow-block{
+            .row{display: flex; align-items: flex-start; justify-content: space-around;
+                .item{max-width: 310px; color: white;
+                    .con-cat{height: 135px; display: flex; align-items: flex-end; justify-content: center; 
+                        img{display: inline-block; vertical-align: bottom;}
+                    }
+                    .tip-titl{width: 100%; text-align: center; padding-top: 10px; font-size: 23px;   font-family: "GothamPro", sans-serif; font-weight: bold; line-height: 1.304;}
+                    .after{font-size: 18px; font-family: "GothamPro", sans-serif; line-height: 1.278;   text-align: center;}
+                }
+                &:nth-child(1){
+                    .item:nth-child(2){
+                        .tip-titl{font-size: 25px;}
+                    }
+                    .item:nth-child(2){
+                        .tip-titl{font-size: 25px;}
+                        .after{font-size: 20px;}
+                    }
+                }
+                &:nth-child(2){ margin-top: -50px;
+                    .item{ max-width: 550px;
+                        .tip-titl{font-size: 32px;}
+                        .after{max-width: 285px; margin: 0 auto;}
+                    }
+                }
+                &:nth-child(3){ 
+                    .item{ max-width: 290px;
+                        .tip-titl{font-size: 25px;}
+                        .after{font-size: 20px;}                        
+                    }
+                }
+            }
+        }
+    }
+
+/* why stol */
