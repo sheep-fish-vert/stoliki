@@ -187,7 +187,7 @@
                         &:before{top:100%;left:50%;transform:rotate(145deg);}
                         &:after{bottom:-77px;left:68px;}
                     }
-                    &:nth-child(2){right: 0;top:50%;transform:translate(0, 0);
+                    &:nth-child(2){right: 50px;top:50%;transform:translate(0, 0);
                         &:before{bottom:calc(100% + 1px);left:50%;transform:rotate(-120deg);}
                         &:after{top:-120px;left:103px;}
                     }
@@ -211,7 +211,7 @@
                         &:nth-child(1){left:65%;
                             &:before{width: 120px;}
                         }
-                        &:nth-child(2){right:50px;
+                        &:nth-child(2){right:0px;
                             &:before{width: 125px;}
                         }
                         &:nth-child(3){left:57%;
