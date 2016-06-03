@@ -25,6 +25,43 @@
 
     //= partials/footer.html
 
+
+     <!-- modal window - pop -->
+        <div class="md-modal more-succ md-effect-13" id="modal-13">
+            <div class="md-content pop-succ">
+                <div class="xlose-btn"></div>
+                <form action="ajax.php" name="" class="contact-form">
+                    <div class="contact-form-title">
+                        <h5>Закажите <br/>  обратный звонок</h5>
+                    </div>
+                    <div class="contact-form-row cfix">
+                        <div class="contact-form-item">
+                            <div class="contact-form-item-input form_row">
+                                <div class="form_input">
+                                    <input type="text" name="contact_name" required="required" value="" placeholder="имя">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form-item">
+                            <div class="contact-form-item-input form_row">
+                                <div class="form_input">
+                                    <input type="text" name="contact_tel" value="" required="required" placeholder="телефон" class="tel-mask">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-row-submit cfix">
+                        <div class="contact-form-item">
+                            <button type="submit" class="contact-submit">
+                                <span>заказать звонок</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <!-- /modal window - pop -->
+    
     <!-- modal window - success -->
 
         <div class="md-modal md-effect-13 success-modal" id="success-modal">
@@ -36,8 +73,12 @@
         </div>
 
         <div class="md-overlay"></div>
+        
+        
 
     <!-- /modal window - success -->
+    
+   
 
 </div>
 </body>
