@@ -114,7 +114,7 @@
           .aside_left{min-height: 800px;flex:2;padding-right: 40px;}
           .aside_right{flex:1.1;}
       }
-      .big_form_bottom{min-height: 200px;background-color: #fff;}
+
 
       // left side
 
@@ -139,9 +139,15 @@
                 .item_title{color: white;font-size: 25px;font-weight: 300;margin-bottom: 10px;}
                 .item_wrap{display: flex;justify-content:center;flex-wrap: wrap;
                     &.text_input{flex-direction:column;
-                        label{width: auto;position: relative;}
-                        .radio-button-size{width: 16px;height: 16px;border-radius: 50%;background-color: #b71a1c;display: inline-block;}
-                        input{position: absolute;left: 0;top:0;display: block;height: 0;width: 0;opacity:0;background-color: transparent;color:transparent;font-size: 0;}
+                        label{width: auto;position: relative;flex-direction: row;justify-content:flex-start;padding-left: 17%;}
+                        .radio-button-size{width: 16px;height: 16px;border-radius: 50%;background-color: #b71a1c;display: inline-block;position: relative;margin-right: 10px;
+                          &:after{position: absolute;content: '';height: 7px;width: 7px;border-radius: 50%;background-color: #fff;top: 50%;left: 50%;transform: translate(-50%, -50%);opacity: 0;}
+                        }
+                        input{position: absolute;left: 0;top:0;display: block;height: 0;width: 0;opacity:0;background-color: transparent;color:transparent;font-size: 0;
+                         &:checked + .radio-button-size:after{opacity: 1;}
+                        }
+                        b{padding-top: 0;}
+
                     }
                     label{width: 72px;display: flex;flex-direction:column;justify-content:flex-start;cursor: pointer;position: relative;margin:0 6px 9px;align-items:center;
                         &:hover{
@@ -164,6 +170,13 @@
         }
       // /right side
 
+      // big_form_bottom
+      .big_form_bottom{min-height: 200px;
+        .big_form_title{font-size: 41px;margin:0;min-height: 100px;
+          &:after,&:before{display: none;}
+          h3{margin:0;font-size: 41px;font-weight: 300;}
+        }
+      }
   }
 
 // /big form
