@@ -1,0 +1,17 @@
+.casa-slider{background-image: url(../images/bg-rectangle.jpg);
+    .mbox{max-width: 1123px;}
+    .casa-wrap{background-image: url(../images/sldrBG.png); background-position: center center; background-size:cover; background-repeat: no-repeat; min-height: 473px;
+        .title{ text-align: center;
+            h2{ margin: 0;font:700 69px/1 'Room'; color: #000;}
+        }
+        .casablanka-slider{max-height: 238px; display: flex; justify-content: space-between; width: 100%;
+            .item{ width: 358px;    padding: 0 5px;}
+        }
+    }
+    .slick-arrow{
+        &:before,
+        &:after{ content: ''; position: absolute; display: block; width: 58px; height: 4px; background-color: #9d9d9d; opacity:1;transform-origin: left center; transform: rotate(60deg); top: 0;}
+        &:after{transform: rotate(-60deg); top: 2px;}
+    }
+    .slick-next {}
+}
