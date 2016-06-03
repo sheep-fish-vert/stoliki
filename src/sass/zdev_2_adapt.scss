@@ -30,6 +30,26 @@
             }
         }
     /* how get stoll */
+    
+    /* why-stol */
+        .why-stol {     padding-top: 80px;
+            .grow-block {
+                .row{margin: 0 !important; display: block !important;
+                    .item{margin: 0 auto; padding: 10px 0; max-width: 450px;
+                        .con-cat { height: auto;}
+                    }
+                }
+            }
+            .button-in-the-end button {height: auto; padding: 10px 10%;
+                span{line-height: 1.2;}
+            }
+        }
+        
+    /* why-stol */
+    
+    /* footer */
+        .footer .con {justify-content: space-around;}
+    /* footer */
 
 }
 @media screen and (max-width: 992px){
@@ -45,7 +65,26 @@
             .form-block {width: 100%;}
         }
     /* contacts */ 
-
+    
+    /* why-stol */
+        .why-stol .super-titl h2{
+             span { font-size: 30px;}
+             b { font-size: 32px;}
+        }
+        
+        .why-stol .grow-block .row .item{
+            .tip-titl {font-size: 20px !important;}
+            .after {font-size: 14px !important;}
+        }
+        
+    /* why-stol */
+    
+    /* footer */
+        .footer .con { align-items: center;
+            .opis{width: 100%; text-align: center; font-size: 14px;}
+            .logo{width: 100%;}
+        }
+    /* footer */
     
 }
 @media screen and (max-width: 666px){
