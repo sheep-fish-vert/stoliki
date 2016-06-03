@@ -871,27 +871,28 @@
                 }
                 &:nth-child(1){ justify-content: space-between;
                     .item:nth-child(2){
-                        .tip-titl{font-size: 25px;}
+                     /*   .tip-titl{font-size: 25px;}*/
                     }
                     .item:nth-child(2){ 
-                        .tip-titl{font-size: 25px;}
-                        .after{font-size: 20px;}
+                       /* .tip-titl{font-size: 25px;}
+                        .after{font-size: 20px;}*/
                     }
                     .item:nth-child(3){ max-width: 380px;
-                        .tip-titl{font-size: 25px;}
-                        .after{font-size: 20px;}
+                       /* .tip-titl{font-size: 25px;}
+                        .after{font-size: 20px;} */
                     }
+                    */
                 }
                 &:nth-child(2){ margin-top: -43px;
                     .item{ max-width: 550px;
-                        .tip-titl{font-size: 32px; padding-top: 9px;}
-                        .after{max-width: 285px; margin: 0 auto; padding-top: 10px;}
+                     /*   .tip-titl{font-size: 32px; padding-top: 9px;}
+                        .after{max-width: 285px; margin: 0 auto; padding-top: 10px;}*/
                     }
                 }
                 &:nth-child(3){ margin-top: -22px;
                     .item{ max-width: 290px;
-                        .tip-titl{font-size: 25px;}
-                        .after{font-size: 20px;}                        
+                      /*  .tip-titl{font-size: 25px;}
+                        .after{font-size: 20px;}   */                     
                     }
                 }
             }
@@ -909,3 +910,37 @@
 
 
 /* why stol */
+
+/* footer */
+    .footer_placeholder{display: none;}
+    .footer{ padding: 15px 0; background-color: rgba(255,255,255,0.65);
+        .con{display: flex; align-items: stretch; justify-content: space-between; flex-wrap: wrap;
+            .opis{width: 500px; font-size: 16px; font-family: "GothamPro", sans-serif; font-weight: 300; color: rgb(0, 0, 0); line-height: 1.438;  text-align: left;}
+            .dillers{max-width: 320px; display: flex; align-items: center; flex-wrap: wrap; justify-content: center; align-content: space-around;
+                a{display: inline-block; text-decoration: none; display: inline-block; font-size: 25px;  font-family: "GothamPro", sans-serif; color: black; line-height: 1; text-decoration: none; position: relative; margin-bottom: 10px; padding-top: 15px;
+                    &:before { content: ''; position: absolute;bottom: 0;left: 50%;right: 50%;   height: 1px; transition: all 0.3s; background-color: black;}
+                    &:hover{
+                        &:before{left: 0; right: 0;}
+                    }
+                }
+                button{border: none; border-top: 5px solid #b71a1c; border-bottom: 5px solid #b71a1c;background-color: transparent; width: 100%; max-width: 315px; margin: 0 auto; position: relative; transition: all 0.3s;
+                    &:before{content: ''; position: absolute; top: 0; bottom: 0; left:50%; right: 50%; background-color: #b71a1c; transition: all 0.3s;}
+                    span{line-height: 32px; font-size: 19px; font-family: "GothamPro", sans-serif;   color: rgb(0, 0, 0); text-transform: uppercase; position: relative; z-index: 2; }
+                    &:hover{ 
+                        span{color: white;}
+                        &:before{left: 8%; right: 8%;}
+                    }
+                    &:active{
+                        span{color: white;}
+                        &:before{left: 0%; right: 0%;}
+                    }
+                }
+            }
+            .logo{display: flex; align-items: center; flex-wrap: wrap; justify-content: center; align-content: center;
+                a{display: inline-block;}
+                p{display: block; width: 100%; text-align: center;}
+            }
+        }
+    }
+    
+/* footer */

@@ -16,14 +16,30 @@
 @media screen and (max-width: 992px){
 
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
+    .casa-slider{
+        .casa-wrap{
+            .title{
+                h2{ margin: 0;font:700 50px/1 'Room'; }
+            }
 
+        }
+
+    }
 }
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
+    .casa-slider{
+        .casa-wrap{ 
+            .title{
+                h2{ margin: 0;font:700 38px/1 'Room'; }
+            }
 
+        }
+
+    }
 }
 @media screen and (max-width: 320px){
 
