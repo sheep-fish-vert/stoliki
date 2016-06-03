@@ -870,7 +870,7 @@
                     .after{font-size: 18px; font-family: "GothamPro", sans-serif; line-height: 1.278;   text-align: center;}
                 }
                 &:nth-child(1){ justify-content: space-between;
-                    .item:nth-child(2){
+                /*    .item:nth-child(2){
                         .tip-titl{font-size: 25px;}
                     }
                     .item:nth-child(2){ 
@@ -881,17 +881,18 @@
                         .tip-titl{font-size: 25px;}
                         .after{font-size: 20px;}
                     }
+                    */
                 }
                 &:nth-child(2){ margin-top: -43px;
                     .item{ max-width: 550px;
-                        .tip-titl{font-size: 32px; padding-top: 9px;}
-                        .after{max-width: 285px; margin: 0 auto; padding-top: 10px;}
+                     /*   .tip-titl{font-size: 32px; padding-top: 9px;}
+                        .after{max-width: 285px; margin: 0 auto; padding-top: 10px;}*/
                     }
                 }
                 &:nth-child(3){ margin-top: -22px;
                     .item{ max-width: 290px;
-                        .tip-titl{font-size: 25px;}
-                        .after{font-size: 20px;}                        
+                      /*  .tip-titl{font-size: 25px;}
+                        .after{font-size: 20px;}   */                     
                     }
                 }
             }
