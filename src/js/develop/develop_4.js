@@ -29,8 +29,15 @@ function showMoreCasablanka(){
     });
 }
 
+function showMoreBigForm(){
+    $(document).on('click', '.big_form_bottom .show_more_button', function(event) {
+        $('.show_more-row').slideDown('300').delay(500).remove();
+        $('.big_form_bottom .show_more_wrap label').unwrap();
+    });
+}
 
 $(document).ready(function(){
+    showMoreBigForm();
     showMoreCasablanka();
     slider_3d();
 });
