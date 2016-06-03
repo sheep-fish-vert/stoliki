@@ -11,7 +11,11 @@
 
 }
 @media screen and (max-width: 1024px){
-
+    // casablanka
+    .casablanka{min-height: auto;
+        .casablanka-title .mbox h2{font-size: 56px;text-align: center;}
+        .casablanka-text p{line-height: 28px;}
+    }
 }
 @media screen and (max-width: 992px){
 
@@ -20,10 +24,21 @@
 
 }
 @media screen and (max-width: 666px){
-
+    // casablanka
+    .casablanka{min-height: auto;
+        .casablanka-title .mbox{min-height: 100px;}
+        .casablanka-title .mbox h2{font-size: 37px;}
+        .casablanka-text p{line-height: 28px;}
+        .casablanka-3d .casablanka-3d-title{font-size: 20px;top: 15px;}
+        .casablanka-3d .casablanka-3d-text{min-height: 40px;font-size: 14px;}
+        .casablanka-3d .casablanka-3d-text span{margin-right: 8px;}
+    }
 }
 @media screen and (max-width: 479px){
-
+    // casablanka
+    .casablanka{min-height: auto;
+        .casablanka-text p{line-height: 24px;}
+    }
 }
 @media screen and (max-width: 320px){
 

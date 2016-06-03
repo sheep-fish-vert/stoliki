@@ -7,10 +7,18 @@ function callPopup(){
 
 }
 
+function scaleBlock(){
+
+
+
+}
+
 
 $(document).ready(function(){
 
     callPopup();
+
+    scaleBlock();
 
 });
 
