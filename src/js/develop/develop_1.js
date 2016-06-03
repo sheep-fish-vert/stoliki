@@ -13,7 +13,7 @@ function scaleBlock(){
 
     function scaleCalc(){
 
-        if($(window).width() < (1170-$.scrollbarWidth()) && $(window).width()) > (767-$.scrollbarWidth()){
+        if(($(window).width() < (1170-$.scrollbarWidth())) && ($(window).width()) > (767-$.scrollbarWidth())){
             scaleParam = $(window).width()/1170;
         }else{
             scaleParam = 1;
