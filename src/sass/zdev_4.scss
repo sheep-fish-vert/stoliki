@@ -94,5 +94,17 @@
             span{margin-right: 40px;}
         }
     }
+    .casablanka-text{padding-top: 35px;margin-bottom: 50px;
+        p{margin:0;line-height: 33px;margin-bottom: 10px;}
+        .casablanka-text-more{
+            .casablanka-text-button{padding-top: 20px;
+                .button-transparent{margin:0 auto;display: block;border-color: #a1080a;color: #000;
+                    &:hover{color: #fff;}
+                    &:before{background-color: #a1080a;}
+                }
+            }
+            .casablanka-text-hidden{display: none;}
+        }
+    }
 }
 
