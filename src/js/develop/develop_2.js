@@ -90,6 +90,15 @@ $(document).ready(function () {
     
     /* close fancy */
     
+    
+    /* footer */ 
+    
+        setTimeout(function(){
+            $('.contacts').css('padding-bottom', $('.footer').height() + 50 )
+        }, 100);
+        
+    
+    /* footer */
 });
 
 $(window).load(function () {
@@ -97,6 +106,16 @@ $(window).load(function () {
 });
 
 $(window).resize(function () {
+    
+    /* footer */ 
+    
+        setTimeout(function(){
+            $('.contacts').css('padding-bottom', $('.footer').height() + 50 )
+        }, 100);
+        
+    
+    /* footer */
+    
 
     /* map */
     if ($(window).width() < 768) {
