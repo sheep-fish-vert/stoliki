@@ -22,8 +22,16 @@ function slider_3d(){
     }
 }
 
+function showMoreCasablanka(){
+    $(document).on('click', '.casablanka-text-button button', function(event) {
+        $('.casablanka-text-hidden').slideDown('300');
+        $(this).parent().slideUp().delay(500).remove();
+    });
+}
+
 
 $(document).ready(function(){
+    showMoreCasablanka();
     slider_3d();
 });
 
