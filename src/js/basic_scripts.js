@@ -75,7 +75,7 @@ function goTo(){
     $('.header-menu a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
-        var target = $(href).offset().top-65;
+        var target = $(href).offset().top-$('.header').outerHeight();
         $(scroller).animate({scrollTop:target},500);
     });
 }
