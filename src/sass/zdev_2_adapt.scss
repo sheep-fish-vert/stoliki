@@ -13,7 +13,11 @@
             .map-block{margin: 0 auto; max-width: 697px; margin-bottom: 20px;}
             .form-block{margin: 0 auto;}
         }
-    /* contacts */ 
+   /* contacts */ 
+    
+    /* footer */
+        .footer .con {justify-content: space-around;}
+    /* footer */
 
 }
 @media screen and (max-width: 1024px){
@@ -47,9 +51,6 @@
         
     /* why-stol */
     
-    /* footer */
-        .footer .con {justify-content: space-around;}
-    /* footer */
 
 }
 @media screen and (max-width: 992px){
