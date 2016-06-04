@@ -293,8 +293,9 @@ $(document).ready(function(){
    validate('.contact-form-in-b', {submitFunction:validationCall});
 
    validate('.top-block-form-main', {submitFunction:validationCall});
-   
-   
+   validate('.big_form_wrap form', {submitFunction:validationCall});
+
+
 
    Maskedinput();
    fancyboxForm();

@@ -367,18 +367,18 @@
         .header{
             .header-wrap{display: block;}
 
-            .header-logo{width: calc(100% - 50px);
+            .header-logo{width: calc(100% - 175px);
                 img{max-width: 100%;}
             }
 
             .header-nav{
-                .sendwich{position: absolute;right:15px;top:25px;}
+                .sendwich{position: absolute;right:7px;top:8px;}
             }
 
             .header-telefones{padding-top: 10px;
                 .header-telefones-wrap{text-align: center;
                     p{
-                        a{font-size: 18px;}
+                        a{font-size: 15px;}
                     }
                 }
             }
