@@ -116,6 +116,15 @@
             .bottom_input .bottom_input_wrap button{height: 48px;
                 span{font-size: 19px !important;margin-top: 5px !important;}
             }
+
+            .big_form_bottom{
+                .item_wrap{
+                    &.show_more{
+                        .show_more-row{text-align: center;}
+                    }
+                }
+            }
+
         }
 
     /* /big_form */
