@@ -58,6 +58,13 @@
                     }
                 }
             }
+            .big_form_bottom {
+                .big_form_title h3{font-size: 35px;}
+                .big_form_title{font-size: 35px;min-height: 85px;}
+                .big_form_bottom .item_wrap.show_more .show_more_button{font-size: 16px;margin-top: 10px;}
+                .bottom_input{padding-top: 30px;}
+                .bottom_input .bottom_input_wrap button span{font-size: 29px;margin-top: 8px;}
+            }
         }
 
     /* /big_form */
@@ -73,6 +80,8 @@
                     span{font-size: 40px;line-height: 50px;}
                 }
             }
+            .big_form_bottom .item_wrap{justify-content: space-around;}
+            .bottom_input .bottom_input_wrap input{margin-right: 30px;}
         }
 
     /* /big_form */
@@ -102,6 +111,10 @@
                 h2{font-size: 20px;line-height: 28px;
                     span{font-size: 28px;line-height: 36px;}
                 }
+            }
+            .bottom_input .bottom_input_wrap input{    padding-left: 21px;    height: 48px;}
+            .bottom_input .bottom_input_wrap button{height: 48px;
+                span{font-size: 19px !important;margin-top: 5px !important;}
             }
         }
 
