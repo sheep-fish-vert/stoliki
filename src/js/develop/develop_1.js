@@ -5,6 +5,10 @@ function callPopup(){
     });
 
 
+    $(document).on('click','.md-overlay', function(){
+        $('.md-show').removeClass('md-show');
+    });
+
 }
 
 function scaleBlock(){
