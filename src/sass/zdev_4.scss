@@ -154,7 +154,7 @@
                             .item_big_image{display: block;}
                         }
                     }
-                    input{position: absolute;top: 999px;left: 999px;z-index: -9999;opacity: 0;font-size: 0;
+                    input{position: absolute;top: 0px;left: 0px;z-index: -9999;opacity: 0;font-size: 0;width: 0;height: 0;background-color:transparent;border:none;color:transparent;
                         &:checked + .item_img img {border-color:#fff;background-color: #fff;}
                     }
                     b{color: white;font-weight: 300;padding-top: 10px;}
