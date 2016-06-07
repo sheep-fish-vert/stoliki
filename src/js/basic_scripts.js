@@ -75,7 +75,7 @@ function goTo(){
     $('.header-menu a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
-        var target = $(href).offset().top-65;
+        var target = $(href).offset().top-$('.header').outerHeight();
         $(scroller).animate({scrollTop:target},500);
     });
 }
@@ -166,7 +166,7 @@ function headeButer(menuMobile, toggleMenu){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     //oneHeightItems();
-    $('.footer_placeholder').height($('.footer').outerHeight());
+  //  $('.footer_placeholder').height($('.footer').outerHeight());
 
     headeButer($('.sendwich-wrap'), $('.header-menu'));
 

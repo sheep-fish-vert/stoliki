@@ -8,16 +8,21 @@
 
 }
 @media screen and (max-width: 1120px){
-   /* contacts */ 
-        section.contacts .after-con { display: block; 
+
+    /* contacts */
+        section.contacts .after-con { display: block;
             .map-block{margin: 0 auto; max-width: 697px; margin-bottom: 20px;}
             .form-block{margin: 0 auto;}
         }
-    /* contacts */ 
+    /* contacts */
+
+    /* footer */
+        .footer .con {justify-content: space-around;}
+    /* footer */
 
 }
 @media screen and (max-width: 1024px){
-    
+
     /* how get stoll */
         section.how-get-stol {padding-bottom: 20px;
             .convert-rov { display: block;
@@ -30,12 +35,15 @@
             }
         }
     /* how get stoll */
-    
+
     /* why-stol */
-        .why-stol {     padding-top: 80px;
+        .why-stol {padding-top: 80px;
+            .super-titl{padding-top: 15px;
+                h2{margin-top: 0;}
+            }
             .grow-block {
                 .row{margin: 0 !important; display: block !important;
-                    .item{margin: 0 auto; padding: 10px 0; max-width: 450px;
+                    .item{margin: 0 auto; padding: 10px 0; max-width: 450px;width: auto;
                         .con-cat { height: auto;}
                     }
                 }
@@ -44,8 +52,9 @@
                 span{line-height: 1.2;}
             }
         }
-        
+
     /* why-stol */
+    .title-text h2 {font-size: 56px;}
 
 }
 @media screen and (max-width: 992px){
@@ -53,28 +62,35 @@
     .op-succ form .contact-form-title h5 { font-size: 24px; }
 }
 @media screen and (max-width: 767px){
-    /* contacts */ 
+    /* contacts */
         section.contacts .after-con {
             .map-block{ width: 100%;
                 #map{width: 100%; height: 400px;}
             }
             .form-block {width: 100%;}
         }
-    /* contacts */ 
-    
+    /* contacts */
+
     /* why-stol */
         .why-stol .super-titl h2{
              span { font-size: 30px;}
              b { font-size: 32px;}
         }
-        
+
         .why-stol .grow-block .row .item{
             .tip-titl {font-size: 20px !important;}
             .after {font-size: 14px !important;}
         }
-        
+
     /* why-stol */
-    
+
+    /* footer */
+        .footer .con { align-items: center;
+            .opis{width: 100%; text-align: center; font-size: 14px;}
+            .logo{width: 100%;}
+        }
+    /* footer */
+
 }
 @media screen and (max-width: 666px){
     .pop-succ .xlose-btn { top: 5px; right: 5px;}

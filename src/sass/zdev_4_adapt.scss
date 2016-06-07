@@ -9,6 +9,21 @@
 }
 @media screen and (max-width: 1280px){
 
+    /* big_form */
+
+        .big_form{
+            .aside_right{
+                .item{padding: 12px 18px 2px;
+                    .item_wrap{
+                        label{width: 57px;}
+                        .item_img{width: 44px;height: 44px;}
+                    }
+                }
+            }
+        }
+
+    /* /big_form */
+
 }
 @media screen and (max-width: 1024px){
     // casablanka
@@ -19,8 +34,57 @@
 }
 @media screen and (max-width: 992px){
 
+    /* big_form */
+
+        .big_form{
+
+            .big_form_title{margin-left: 0;
+                &:before, &:after{width: calc(100% - 84px);}
+                h2{font-size: 48px;
+                    &:before, &:after{width: 100%;}
+                    span{font-size: 68px;display: inline-block;}
+                }
+            }
+
+            .big_form_top{display: block;
+                .aside_left{min-height: 0;padding-right: 0;}
+                .aside_right{
+                    .item{
+                        .item_wrap{
+                            &.text_input{align-items: center;
+                                label{padding-left:0; }
+                            }
+                        }
+                    }
+                }
+            }
+            .big_form_bottom {
+                .big_form_title h3{font-size: 35px;}
+                .big_form_title{font-size: 35px;min-height: 85px;}
+                .big_form_bottom .item_wrap.show_more .show_more_button{font-size: 16px;margin-top: 10px;}
+                .bottom_input{padding-top: 30px;}
+                .bottom_input .bottom_input_wrap button span{font-size: 29px;margin-top: 8px;}
+            }
+        }
+
+    /* /big_form */
+
 }
 @media screen and (max-width: 767px){
+
+    /* big_form */
+
+        .big_form{
+            .big_form_title{min-height: 132px;
+                h2{font-size: 30px;line-height: 36px;
+                    span{font-size: 40px;line-height: 50px;}
+                }
+            }
+            .big_form_bottom .item_wrap{justify-content: space-around;}
+            .bottom_input .bottom_input_wrap input{margin-right: 30px;}
+        }
+
+    /* /big_form */
 
 }
 @media screen and (max-width: 666px){
@@ -39,6 +103,32 @@
     .casablanka{min-height: auto;
         .casablanka-text p{line-height: 24px;}
     }
+
+    /* big_form */
+
+        .big_form{
+            .big_form_title{min-height: 106px;
+                h2{font-size: 20px;line-height: 28px;
+                    span{font-size: 28px;line-height: 36px;}
+                }
+            }
+            .bottom_input .bottom_input_wrap input{    padding-left: 21px;    height: 48px;}
+            .bottom_input .bottom_input_wrap button{height: 48px;
+                span{font-size: 19px !important;margin-top: 5px !important;}
+            }
+
+            .big_form_bottom{
+                .item_wrap{
+                    &.show_more{
+                        .show_more-row{text-align: center;}
+                    }
+                }
+            }
+
+        }
+
+    /* /big_form */
+
 }
 @media screen and (max-width: 320px){
 
