@@ -37,7 +37,7 @@ function showMoreBigForm(){
 }
 
 $(document).ready(function(){
-    showMoreBigForm();
+    //showMoreBigForm();
     showMoreCasablanka();
     slider_3d();
 });

@@ -14,7 +14,7 @@ function googleMap(mapWrap) {
             zoomControlOptions: {
                 position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
             }
-        }
+        };
         map = new google.maps.Map(document.getElementById(mapWrap), myOptions);
 
         var contentString = '<div class="marker-test">' + googleText + '</div>';
@@ -24,11 +24,12 @@ function googleMap(mapWrap) {
 
 
         /*маркер на svg*/
-        var SQUARE_PIN = 'M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z'
+        var SQUARE_PIN = 'M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z';
         //больше - http://map-icons.com/
         /*/маркер на svg*/
 
         //var image = 'images/footer-contact-marker.png';   // иконка картинкой
+
 
         var marker = new google.maps.Marker({
             position: myLatlng,
@@ -54,7 +55,7 @@ function googleMap(mapWrap) {
             }
         }
         /*/анимация при клике на маркер*/
-
+        infowindow.open(map, marker);
         /*По клику открываеться инфоблок*/
         google.maps.event.addListener(marker, 'click', function () {
             infowindow.open(map, marker);
@@ -80,24 +81,24 @@ $(document).ready(function () {
         };
 
     /* map */
-    
-    
+
+
     /* close fancy */
-    
+
         $('.xlose-btn').click(function(){
             $(this).closest('.md-modal').removeClass('md-show');
         });
-    
+
     /* close fancy */
-    
-    
-    /* footer */ 
-    
+
+
+    /* footer */
+
         setTimeout(function(){
             $('.contacts').css('padding-bottom', $('.footer').height() + 50 )
         }, 100);
-        
-    
+
+
     /* footer */
 });
 
@@ -106,16 +107,16 @@ $(window).load(function () {
 });
 
 $(window).resize(function () {
-    
-    /* footer */ 
-    
+
+    /* footer */
+
         setTimeout(function(){
             $('.contacts').css('padding-bottom', $('.footer').height() + 50 )
         }, 100);
-        
-    
+
+
     /* footer */
-    
+
 
     /* map */
     if ($(window).width() < 768) {

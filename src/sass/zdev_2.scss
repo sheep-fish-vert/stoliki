@@ -60,6 +60,9 @@
         .after-con{width: 100%; display: flex; align-items: stretch; justify-content: space-around;
             .map-block{ padding: 6px; background-color: white; border-radius: 5px;
                 #map{width: 685px; height: 500px;}
+                .gm-style .gm-style-iw{padding:5px;text-align: center;}
+                .gm-style .gm-style-iw + div{display: none;}
+                .gm-style .gm-style-iw .marker-test{font-size: 16px;color: #000;line-height: 1.5;font-family: 'GothamPro';font-weight: 400;}
             }
             .form-block{ width: 360px; background-color: white; border-radius: 5px; padding: 23px 30px;
                 .contact-form-title h5{ font-size: 40px; font-family: "GothamPro"; color: rgb(0, 0, 0);   line-height: 1.2; text-align: center; font-weight: 300; margin: 0; padding-bottom: 15px;}
@@ -932,17 +935,17 @@
                         &:before{left: 0; right: 0;}
                     }
                 }
-                button{border: none; border-top: 5px solid #b71a1c; border-bottom: 5px solid #b71a1c;background-color: transparent; width: 100%; max-width: 315px; margin: 0 auto; position: relative; transition: all 0.3s;
-                    &:before{content: ''; position: absolute; top: 0; bottom: 0; left:50%; right: 50%; background-color: #b71a1c; transition: all 0.3s;}
+                button,div{border: none; border-top: 5px solid #b71a1c; border-bottom: 5px solid #b71a1c;background-color: transparent; width: 100%; max-width: 315px; margin: 0 auto; position: relative; transition: all 0.3s;text-align: center;
+                    // &:before{content: ''; position: absolute; top: 0; bottom: 0; left:50%; right: 50%; background-color: #b71a1c; transition: all 0.3s;}
                     span{line-height: 32px; font-size: 19px; font-family: "GothamPro", sans-serif;   color: rgb(0, 0, 0); text-transform: uppercase; position: relative; z-index: 2; }
-                    &:hover{
-                        span{color: white;}
-                        &:before{left: 8%; right: 8%;}
-                    }
-                    &:active{
-                        span{color: white;}
-                        &:before{left: 0%; right: 0%;}
-                    }
+                    // &:hover{
+                    //     span{color: white;}
+                    //     &:before{left: 8%; right: 8%;}
+                    // }
+                    // &:active{
+                    //     span{color: white;}
+                    //     &:before{left: 0%; right: 0%;}
+                    // }
                 }
             }
             .logo{display: flex; align-items: center; flex-wrap: wrap; justify-content: center; align-content: center;
