@@ -12,7 +12,9 @@
       position: absolute;
       top: 0;
       width: 100%;
-      height: auto;
+      height: 100%;
+      max-height: 650px;
+      object-fit: cover;
       &.previous-image{
         visibility: hidden;
         /*
@@ -81,15 +83,17 @@
 
 
 // casablanka
-.casablanka{background: url(../images/bg-rectangle.jpg);min-height: 1400px;
+.casablanka{background: url(../images/bg-rectangle.jpg);min-height: 880px;
     .casablanka-title{background-color: rgba(255,255,255, .58);box-shadow: 0 4px 11px 6px rgba(0, 0, 0, 0.11);margin-bottom: 38px;
         .mbox{min-height: 130px;display: flex;align-items:center;justify-content:center;font-family: 'Room';
             &:after{display: none;}
             h2{margin:0;font-size: 57px;font-weight: 300;}
         }
     }
-    .casablanka-3d{max-width: 1115px;margin:0 auto;border:6px solid rgba(255,255,255, .65);box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.25);cursor: url(../images/casablanka-3d-cursor.png), auto;
-        .casablanka-3d-title{position: absolute;top: 30px;left: 0;width: 100%;text-align: center;z-index: 10;font-size: 38px;}
+    .casablanka-3d{/*max-width: 1115px;*/margin:0 auto;border:6px solid rgba(255,255,255, .65);box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.25);cursor: url(../images/casablanka-3d-cursor.png), auto;max-width: 1085px;
+        .casablanka-3d-title{position: absolute;top: 30px;left: 0;width: 100%;text-align: center;z-index: 10;font-size: 34px;display: flex;align-items: center;justify-content: center;background-color: rgba(255, 255, 255, 0.7);
+          img{margin-left: 35px;}
+        }
         .casablanka-3d-text{background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 54%,rgba(255,255,255,0) 100%);display: flex;align-items:center;justify-content:center;position: absolute;bottom:0;left: 0;width: 100%;z-index: 10;min-height: 69px;font-size: 21px;
             span{margin-right: 40px;}
         }
